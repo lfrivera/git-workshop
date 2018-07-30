@@ -91,6 +91,7 @@ public class Player implements IMotionable{
 	 */
 	public void up() {
 		
+		position = new Point((int)position.getX(), (int)position.getY()-1);
 	}
 	
 	/**
