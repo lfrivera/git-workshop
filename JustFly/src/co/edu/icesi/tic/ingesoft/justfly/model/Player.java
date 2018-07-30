@@ -84,11 +84,8 @@ public class Player implements IMotionable{
 	@Override
 	public void left() {
 		
-		//double posX = position.getX();
-		//double posY = position.getY();
-		//position.setLocation(posX--, posY);
-		
-		position.x = position.x--;
+		position = new Point((int) position.getX()-1,(int) position.getY());
+		shape.setPosition(position);
 		
 	}
 	
