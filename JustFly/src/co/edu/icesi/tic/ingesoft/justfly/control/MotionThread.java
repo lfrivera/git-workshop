@@ -190,7 +190,7 @@ public class MotionThread extends Thread{
 	 * @param message The message to show.
 	 */
 	private void showMessageOnWindow(String message) {
-		
+		window.showMessage(message);
 	}
 	
 	/**
