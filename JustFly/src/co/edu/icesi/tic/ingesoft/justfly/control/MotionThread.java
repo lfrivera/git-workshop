@@ -170,7 +170,7 @@ public class MotionThread extends Thread{
 	 * Allows to restart the game once a collision has occurred.
 	 */
 	private void restartGame() {
-		
+		JustFlyControl.main(null);
 	}
 	
 	/**
