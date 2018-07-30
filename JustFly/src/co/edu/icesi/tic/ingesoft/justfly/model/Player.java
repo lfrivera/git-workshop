@@ -110,7 +110,10 @@ public class Player implements IMotionable{
 	
 	@Override
 	public boolean collision(CircleShape externalShape) {
-		return false;
+		int sumRad=this.getShape().getRadius()+externalShape.getRadius();
+		double distance=this.getPosition().distance(externalShape.getPosition());
+		boolean condicion=distance<=sumRad;
+		return condicion;
 	}
 
 	public Point getPosition() {
