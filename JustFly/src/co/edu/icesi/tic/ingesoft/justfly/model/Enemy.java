@@ -53,7 +53,8 @@ public class Enemy implements IMotionable{
 
 	@Override
 	public void left() {
-		
+		Point punto = new Point(position.x -50, position.y);
+		this.setPosition(punto);
 	}
 
 	@Override

@@ -97,7 +97,9 @@ public class Player implements IMotionable{
 	 * Method that allows to move to a lower position.
 	 */
 	public void down() {
-	
+//		position.translate(0,1);
+		position.y=position.y++;
+		
 	}
 	
 	/**
@@ -105,7 +107,7 @@ public class Player implements IMotionable{
 	 */
 	public void sumOnePoint()
 	{
-		
+			points ++;
 	}
 	
 	@Override
