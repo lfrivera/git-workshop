@@ -329,7 +329,7 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyDown() {
 		
-		return KeyEvent.VK_DOWN;//Event.DOWN;
+		return KeyEvent.VK_DOWN;
 		
 	}
 	
