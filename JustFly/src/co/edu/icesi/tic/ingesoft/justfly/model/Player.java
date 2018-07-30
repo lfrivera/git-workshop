@@ -105,8 +105,11 @@ public class Player implements IMotionable{
 	 * Method that allows to move to a lower position.
 	 */
 	public void down() {
-//		position.translate(0,1);
-		position.y=position.y++;
+
+		position = new Point((int)position.getX(), (int)position.getY()+1);
+		Point p = new Point((int)shape.getPosition().getX(),(int)shape.getPosition().getY()+1);
+		shape.setPosition(p);
+		
 		
 	}
 	
