@@ -1,5 +1,6 @@
 package co.edu.icesi.tic.ingesoft.justfly.control;
 
+import java.awt.Event;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
@@ -137,7 +138,6 @@ public class JustFlyControl {
 			public void keyReleased(KeyEvent e) {
 				
 				int keyCode = e.getKeyCode();
-				
 				if(keyCode == getCodeKeyUp())
 				{
 					upKeyEvent(false);
@@ -164,7 +164,6 @@ public class JustFlyControl {
 			public void keyPressed(KeyEvent e) {
 				
 				int keyCode = e.getKeyCode();
-				
 				if(keyCode == getCodeKeyUp())
 				{
 					upKeyEvent(true);
@@ -317,7 +316,7 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyUp() {
 		
-		return -1;
+		return 38;
 		
 	}
 	
@@ -328,7 +327,7 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyDown() {
 		
-		return -1;
+		return KeyEvent.VK_DOWN;
 		
 	}
 	

@@ -84,6 +84,12 @@ public class Player implements IMotionable{
 	@Override
 	public void left() {
 		
+		//double posX = position.getX();
+		//double posY = position.getY();
+		//position.setLocation(posX--, posY);
+		
+		position.x = position.x--;
+		
 	}
 	
 	/**
@@ -114,10 +120,7 @@ public class Player implements IMotionable{
 	
 	@Override
 	public boolean collision(CircleShape externalShape) {
-		int sumRad=this.getShape().getRadius()+externalShape.getRadius();
-		double distance=this.getPosition().distance(externalShape.getPosition());
-		boolean condicion=distance<=sumRad;
-		return condicion;
+		return CollisionHelper.getInstance().collision(shape, externalShape);
 	}
 
 	public Point getPosition() {

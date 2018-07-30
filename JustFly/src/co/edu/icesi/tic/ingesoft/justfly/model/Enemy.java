@@ -53,13 +53,14 @@ public class Enemy implements IMotionable{
 
 	@Override
 	public void left() {
-		Point punto = new Point(position.x -50, position.y);
+		Point punto = new Point(position.x -1, position.y);
+		shape.setPosition(punto);
 		this.setPosition(punto);
 	}
 
 	@Override
 	public boolean collision(CircleShape externalShape) {
-		return false;
+	 return CollisionHelper.getInstance().collision(shape, externalShape);
 	}
 	
 	public Image show()
