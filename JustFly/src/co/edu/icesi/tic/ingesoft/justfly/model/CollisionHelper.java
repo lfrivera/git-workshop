@@ -1,6 +1,9 @@
 package co.edu.icesi.tic.ingesoft.justfly.model;
 
+import java.awt.Rectangle;
+
 import co.edu.icesi.tic.ingesoft.justfly.model.entity.CircleShape;
+
 
 /**
  * Class that allows to detect collisions.
@@ -43,7 +46,17 @@ public class CollisionHelper {
 	 */
 	public boolean collision(CircleShape a, CircleShape b)
 	{
-		return false;
+		int aa=9;
+		boolean colisionan= false;
+		double x1= a.getPosition().getX();
+		double y1= a.getPosition().getY();
+		double x2= b.getPosition().getX();
+		double y2= b.getPosition().getY();
+		double d= Math.sqrt(Math.pow(new Double((x2-x1)), 2)+Math.pow(new Double((y2-y1)), 2));
+		double suma= a.getRadius()+ b.getRadius();
+		if( suma== d) colisionan= true;
+		return colisionan;
+		
 	}
 	
 }
