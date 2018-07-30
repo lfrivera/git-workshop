@@ -90,7 +90,8 @@ public class Player implements IMotionable{
 	public void left() {
 		
 		position = new Point((int) position.getX()-1,(int) position.getY());
-		shape.setPosition(position);
+		Point p = new Point((int)shape.getPosition().getX()-1,(int)shape.getPosition().getY());
+		shape.setPosition(p);
 		
 	}
 	
