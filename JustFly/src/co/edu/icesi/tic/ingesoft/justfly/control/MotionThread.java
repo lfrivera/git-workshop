@@ -1,5 +1,6 @@
 package co.edu.icesi.tic.ingesoft.justfly.control;
 
+import java.awt.Point;
 import java.util.ArrayList;
 
 import co.edu.icesi.tic.ingesoft.justfly.model.Enemy;
@@ -170,6 +171,7 @@ public class MotionThread extends Thread{
 	 * Allows to restart the game once a collision has occurred.
 	 */
 	private void restartGame() {
+		window.dispose();
 		JustFlyControl.main(null);
 	}
 	
