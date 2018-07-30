@@ -48,14 +48,16 @@ public class Enemy implements IMotionable{
 	
 	@Override
 	public void right() {
-		
+		position.setLocation(position.getX()+30, position.getY());
+		shape.setPosition(position);
 	}
 
 	@Override
 	public void left() {
 		Point punto = new Point(position.x -1, position.y);
-		shape.setPosition(punto);
 		this.setPosition(punto);
+		Point punto2 = new Point(punto.x + 50, punto.y + 50);	
+		shape.setPosition(punto2);
 	}
 
 	@Override
