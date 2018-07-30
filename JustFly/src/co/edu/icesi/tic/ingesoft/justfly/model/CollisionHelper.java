@@ -53,7 +53,7 @@ public class CollisionHelper {
 		double y2= b.getPosition().getY();
 		double d= Math.sqrt(Math.pow(new Double((x2-x1)), 2)+Math.pow(new Double((y2-y1)), 2));
 		double suma= a.getRadius()+ b.getRadius();
-		if( suma<= d) colisionan= true;
+		if( suma>= d) colisionan= true;
 		return colisionan;
 		
 	}
