@@ -105,7 +105,7 @@ public class Player implements IMotionable{
 	 */
 	public void sumOnePoint()
 	{
-		
+			points ++;
 	}
 	
 	@Override
