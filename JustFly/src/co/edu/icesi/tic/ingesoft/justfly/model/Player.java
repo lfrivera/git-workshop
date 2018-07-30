@@ -98,7 +98,8 @@ public class Player implements IMotionable{
 	public void up() {
 		
 		position = new Point((int)position.getX(), (int)position.getY()-1);
-		shape.setPosition(position);
+		Point p = new Point((int)shape.getPosition().getX(),(int)shape.getPosition().getY()-1);
+		shape.setPosition(p);
 	}
 	
 	/**
