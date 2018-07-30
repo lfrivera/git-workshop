@@ -180,7 +180,7 @@ public class MotionThread extends Thread{
 	 */
 	private String composeMessage(int playerPoints) {
 	
-		return "";
+		return "The player has " + playerPoints + " current points.";
 		
 	}
 	
@@ -190,7 +190,7 @@ public class MotionThread extends Thread{
 	 * @param message The message to show.
 	 */
 	private void showMessageOnWindow(String message) {
-		
+		window.showMessage(message);
 	}
 	
 	/**

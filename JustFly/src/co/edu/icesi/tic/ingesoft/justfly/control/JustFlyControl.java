@@ -155,6 +155,7 @@ public class JustFlyControl {
 				
 				if(keyCode == getCodeKeyRight())
 				{
+					System.out.println("funciona");
 					rightKeyEvent(false);
 				}
 				
@@ -338,7 +339,8 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyLeft() {
 		
-		return -1;
+		
+		return 37;
 		
 	}
 	
@@ -349,7 +351,7 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyRight() {
 		
-		return -1;
+		return 39;
 		
 	}
 
