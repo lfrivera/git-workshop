@@ -18,7 +18,7 @@ import co.edu.icesi.tic.ingesoft.justfly.model.Player;
 @SuppressWarnings("serial")
 public class Canvas extends JPanel{
 
-	private final boolean SHOW_SHAPES = false;
+	private final boolean SHOW_SHAPES = true;
 	
 	/**
 	 * Main player of the game.
