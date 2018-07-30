@@ -37,7 +37,17 @@ public class EnemyCreator {
 	public ArrayList<Enemy> generateInitialEnemies()
 	{
 		ArrayList<Enemy> response = new ArrayList<Enemy>();
-
+		int w=1000;
+		int h=600;
+		for (int i = 0; i < 1000; i+=100) {
+			response.add(new Enemy(i, 0));
+			response.add(new Enemy(i, h-100));
+		}
+		for (int i = 0; i < 600; i+=100) {
+			response.add(new Enemy(0, i));
+			response.add(new Enemy(w-100, i));
+		}
+        
 		return response;
 	}
 	
@@ -48,7 +58,9 @@ public class EnemyCreator {
 	 */
 	public Enemy generateRandomEnemy()
 	{
-		Enemy random = new Enemy(0, 0);
+		int x=1000;
+		int y=100 + (int)(Math.random()*301);
+		Enemy random = new Enemy(x, y);
 		return random;
 	}
 	
