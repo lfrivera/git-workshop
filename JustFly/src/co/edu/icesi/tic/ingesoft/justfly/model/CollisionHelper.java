@@ -46,7 +46,6 @@ public class CollisionHelper {
 	 */
 	public boolean collision(CircleShape a, CircleShape b)
 	{
-		int aa=9;
 		boolean colisionan= false;
 		double x1= a.getPosition().getX();
 		double y1= a.getPosition().getY();
@@ -54,7 +53,7 @@ public class CollisionHelper {
 		double y2= b.getPosition().getY();
 		double d= Math.sqrt(Math.pow(new Double((x2-x1)), 2)+Math.pow(new Double((y2-y1)), 2));
 		double suma= a.getRadius()+ b.getRadius();
-		if( suma== d) colisionan= true;
+		if( suma<= d) colisionan= true;
 		return colisionan;
 		
 	}
