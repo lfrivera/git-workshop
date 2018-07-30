@@ -137,7 +137,6 @@ public class JustFlyControl {
 			public void keyReleased(KeyEvent e) {
 				
 				int keyCode = e.getKeyCode();
-				
 				if(keyCode == getCodeKeyUp())
 				{
 					upKeyEvent(false);
@@ -164,7 +163,6 @@ public class JustFlyControl {
 			public void keyPressed(KeyEvent e) {
 				
 				int keyCode = e.getKeyCode();
-				
 				if(keyCode == getCodeKeyUp())
 				{
 					upKeyEvent(true);
@@ -317,7 +315,7 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyUp() {
 		
-		return -1;
+		return 38;
 		
 	}
 	
